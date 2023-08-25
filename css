@@ -40,3 +40,100 @@ body {
     padding: 20px;
     text-align: center;
   }
+
+  
+  
+  .slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+* { margin: 0; padding: 0; }
+.slider {
+  display: block;
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.slider input {
+  display: none;
+}
+.slider label {
+  background-color: #000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+.imagem {
+  background-image: url("boschhh.png");
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+}
