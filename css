@@ -195,3 +195,71 @@
     justify-content: center;
     
   }
+
+  /* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    background-color: #333; /* Cor de fundo da barra */
+    padding: 5px 0; /* Espaçamento interno superior e inferior */
+}
+
+.navbar-list {
+    list-style: none; /* Remover marcadores de lista */
+    display: flex; /* Exibir itens em uma linha */
+    justify-content: center; /* Centralizar os itens horizontalmente */
+}
+
+.navbar-list li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.navbar-list a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #fff; /* Cor do texto dos links */
+    font-weight: bold; /* Negrito nos links */
+    transition: color 0.3s; /* Transição suave de cor ao passar o mouse */
+}
+
+.navbar-list a:hover {
+    color: #ff9900; /* Cor do texto dos links ao passar o mouse */
+}
+
+/* Resetando estilos padrão do navegador */
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilizando a barra de navegação */
+  nav {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .nav-list li {
+    margin: 0 15px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
+  
