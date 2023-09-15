@@ -301,31 +301,36 @@ body, ul {
     z-index: 1;
     transition: width 1s ease-in;
   }
-  button { 
-    height: 50px;
-    width: 50px;
-    background:  url('lupa.png')  center no-repeat;
-    border: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    cursor: pointer;
-  }
-  button:focus {
-    outline: none;
-  }
-  /* esconde o LABEL "Buscar" */
-  label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    border: 0;	
-  }
 
-  
-  
+/* Estilos para a barra de pesquisa */
+.search-container {
+  display: flex;
+  margin: 20px;
+  perspective: 800px; /* Cria a perspectiva 3D */
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #f4f4f4, #ddd); /* Gradiente para aparência 3D */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para aparência 3D */
+  transform: translateZ(0); /* Ativa a transformação 3D */
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para aparência 3D */
+  transform: translateZ(0); /* Ativa a transformação 3D */
+}
+
+/* Estilos para hover (para efeito de levantamento) */
+#search-input:hover, #search-button:hover {
+  transform: translateZ(5px); /* Levanta a barra quando hover */
+}
